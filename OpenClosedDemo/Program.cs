@@ -121,6 +121,9 @@ namespace OpenClosedDemo
         }
     }
 
+    /// <summary>
+    /// Better filter is closed for modification.
+    /// </summary>
     public class BetterFilter : IFilter<Product>
     {
         public IEnumerable<Product> Filter(IEnumerable<Product> items, ISpecification<Product> spec)
