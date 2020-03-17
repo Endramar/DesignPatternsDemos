@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderDemo", "BuilderDemo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentBuilderWithInheritanceDemo", "FluentBuilderWithInheritanceDemo\FluentBuilderWithInheritanceDemo.csproj", "{FEF27838-046E-46A3-BE31-88602C983F4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentBuilderWithExtensionDemo", "FluentBuilderWithExtensionDemo\FluentBuilderWithExtensionDemo.csproj", "{13B3F052-D6E6-46BE-93C4-E3931C45801E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{FEF27838-046E-46A3-BE31-88602C983F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEF27838-046E-46A3-BE31-88602C983F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEF27838-046E-46A3-BE31-88602C983F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B3F052-D6E6-46BE-93C4-E3931C45801E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B3F052-D6E6-46BE-93C4-E3931C45801E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B3F052-D6E6-46BE-93C4-E3931C45801E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B3F052-D6E6-46BE-93C4-E3931C45801E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
