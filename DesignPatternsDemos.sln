@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentBuilderWithExtensionD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacetedBuilderDemo", "FacetedBuilderDemo\FacetedBuilderDemo.csproj", "{308C3C41-E431-4A92-A943-877DF04552EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodDemo", "FactoryMethodDemo\FactoryMethodDemo.csproj", "{CA860358-390C-4B17-BE51-7D0E0D345DB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{308C3C41-E431-4A92-A943-877DF04552EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{308C3C41-E431-4A92-A943-877DF04552EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{308C3C41-E431-4A92-A943-877DF04552EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA860358-390C-4B17-BE51-7D0E0D345DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA860358-390C-4B17-BE51-7D0E0D345DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA860358-390C-4B17-BE51-7D0E0D345DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA860358-390C-4B17-BE51-7D0E0D345DB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
