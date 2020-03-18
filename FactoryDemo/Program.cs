@@ -60,6 +60,10 @@ namespace FactoryMethodDemo
         {
             var point = PointFactory.NewPolarPoint(1, 0.5);
 
+            // the public constructor is a problem because anyone can create an object with using directly the constructor as below
+
+            var consPoint = new Point(1, 1); // This can be fixed with INNER FACTORY !!!!!
+
             Console.WriteLine(point);
             Console.ReadLine();
         }
