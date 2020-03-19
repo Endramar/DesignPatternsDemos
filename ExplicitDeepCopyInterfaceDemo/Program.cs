@@ -7,27 +7,29 @@ using System.Threading.Tasks;
 
 namespace CopyConstructorDemo
 {
-    public class Person
+    /// <summary>
+    /// A protptype interface for deepcopy .. // better than IClonable
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public interface IPrototype<T>
     {
-        public string[] Names;
+        T DeepCopy();
+    }
+
+    public class Person : IPrototype<Person>
+    {
+        public string Name;
         public Address Address;
 
-        public Person(string[] names, Address address)
+        public Person(string name, Address address)
         {
-            Names = names ?? throw new ArgumentNullException(nameof(names));
+            Name = name ?? throw new ArgumentNullException(nameof(name));
             Address = address ?? throw new ArgumentNullException(nameof(address));
         }
 
-        /// <summary>
-        /// This is a copy constructor which is used for deep copy. The idea comes from C++;
-        /// </summary>
-        /// <param name="other"></param>
-        public Person(Person other)
+        public Person DeepCopy()
         {
-            // This is wrong on UDEMY ??????
-            Names =  (string [])other.Names.Clone();
-            // Because address is a reference type we must create a copy constructor inside the address classs as well.
-            Address = new Address(other.Address);
+            return new Person(Name, Address.DeepCopy());
         }
 
         public override string ToString()
@@ -36,7 +38,7 @@ namespace CopyConstructorDemo
         }
     }
 
-    public class Address
+    public class Address : IPrototype<Address>
     {
         public string StreetName;
         public int HouseNumber;
@@ -47,10 +49,9 @@ namespace CopyConstructorDemo
             HouseNumber = houseNumber;
         }
 
-        public Address(Address other)
+        public Address DeepCopy()
         {
-            StreetName = other.StreetName;
-            HouseNumber = other.HouseNumber;
+            return new Address(StreetName, HouseNumber);
         }
 
         public override string ToString()
@@ -65,7 +66,7 @@ namespace CopyConstructorDemo
         {
             var john = new Person
             (
-                 new [] { "John", "Smith" },
+                 "John",
                  new Address
                 (
                     "Winchester Road",
@@ -74,8 +75,8 @@ namespace CopyConstructorDemo
             );
 
             // a deep copy of john for jane. John is the prototype 
-            var jane = new Person(john);
-            jane.Names[0] = "Jane";
+            var jane = john.DeepCopy();
+            jane.Name = "Jane";
             jane.Address.HouseNumber = 321;
 
             Console.WriteLine(john);
