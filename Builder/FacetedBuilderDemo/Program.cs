@@ -100,6 +100,8 @@ namespace FacetedBuilderDemo
 
             // Example of the work facade is as follows:
 
+            var eb = employeeBuilder.Works.At("Snacktech").AsA("Software Developer").Earns(120000);
+
             Employee employee = employeeBuilder.Works.At("Snacktech").AsA("Software Developer").Earns(120000);
 
             Console.WriteLine(employee);

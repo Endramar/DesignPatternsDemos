@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedDemo", "Solid\Ope
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityDemo", "Solid\SingleResponsibilityDemo\SingleResponsibilityDemo.csproj", "{FF710F9F-1317-4972-A5D4-1C17F61CDAA8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototype", "Prototype", "{ACCA28C7-5D4D-4D64-B372-E308F2FB5E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyConstructorDemo", "CopyConstructorDemo\CopyConstructorDemo.csproj", "{9D5096F8-B0E7-4C7C-8C79-EE18DD0A7128}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,10 @@ Global
 		{FF710F9F-1317-4972-A5D4-1C17F61CDAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF710F9F-1317-4972-A5D4-1C17F61CDAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF710F9F-1317-4972-A5D4-1C17F61CDAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D5096F8-B0E7-4C7C-8C79-EE18DD0A7128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D5096F8-B0E7-4C7C-8C79-EE18DD0A7128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D5096F8-B0E7-4C7C-8C79-EE18DD0A7128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D5096F8-B0E7-4C7C-8C79-EE18DD0A7128}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +133,7 @@ Global
 		{5B88CA97-12BC-4C57-8A6B-584588864C45} = {B1A0B0D7-0F84-4A25-A924-D68A8A56D912}
 		{885D8C6F-AE32-4FA1-A254-3AC28617E957} = {B1A0B0D7-0F84-4A25-A924-D68A8A56D912}
 		{FF710F9F-1317-4972-A5D4-1C17F61CDAA8} = {B1A0B0D7-0F84-4A25-A924-D68A8A56D912}
+		{9D5096F8-B0E7-4C7C-8C79-EE18DD0A7128} = {ACCA28C7-5D4D-4D64-B372-E308F2FB5E01}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22949918-CDF8-4BA0-AAFC-73D1B28AF754}
