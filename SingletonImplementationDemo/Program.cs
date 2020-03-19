@@ -31,8 +31,10 @@ namespace SingletonImplementationDemo
         }
 
         private static Lazy<SingletonDatabase> instance = new Lazy<SingletonDatabase>(() => new SingletonDatabase()); // this only works once;
-
         public static SingletonDatabase Instance => instance.Value;  // this is the singleton property
+
+        //private static SingletonDatabase instance = new SingletonDatabase();
+        //public static SingletonDatabase Instance => instance;
     }
 
 
@@ -43,6 +45,11 @@ namespace SingletonImplementationDemo
             Console.WriteLine("The prgram is running.");
 
             var db = SingletonDatabase.Instance;
+
+            var city = "Tokyo";
+            var population = db.GetPopulationOfCity(city);
+
+            WriteLine($"{city} has a population of {population}");
 
             Console.ReadLine();
         }
