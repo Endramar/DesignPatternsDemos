@@ -17,8 +17,6 @@ namespace BuilderDemo
         public List<HtmlElement> Elements = new List<HtmlElement>();
         private const int IndentSize = 2;
 
-        private readonly string conflictDevTestProps;
-
         public HtmlElement()
         {
 
