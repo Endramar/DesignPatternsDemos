@@ -18,6 +18,7 @@ namespace BuilderDemo
         private const int IndentSize = 2;
 
         private readonly string thisIsAConflickString;
+        private readonly string conflictDevTestProps;
 
         public HtmlElement()
         {
