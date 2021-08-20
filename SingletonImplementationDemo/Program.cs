@@ -30,11 +30,13 @@ namespace SingletonImplementationDemo
             return capitals[name];
         }
 
-        private static Lazy<SingletonDatabase> instance = new Lazy<SingletonDatabase>(() => new SingletonDatabase()); // this only works once;
+        private static Lazy<SingletonDatabase> instance = new Lazy<SingletonDatabase>(() => new SingletonDatabase()); // only create the instance when it is needed
         public static SingletonDatabase Instance => instance.Value;  // this is the singleton property
 
         //private static SingletonDatabase instance = new SingletonDatabase();
         //public static SingletonDatabase Instance => instance;
+
+        public static int TestValue = 5; // getting this value will not create the instance because of the lazy initialization 
     }
 
 
