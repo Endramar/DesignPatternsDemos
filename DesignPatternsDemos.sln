@@ -53,6 +53,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonImplementationDemo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyInitializationDemo", "LazyInitializationDemo\LazyInitializationDemo.csproj", "{9A1A6792-8407-45CA-BDE0-35876493CCDE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{CFA6A6FC-A43C-462C-9359-1BF1E3D55F5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorRasterDemo", "VectorRasterDemo\VectorRasterDemo.csproj", "{BF69C78C-D58F-4984-B5D7-AB29E8646DFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,6 +143,10 @@ Global
 		{9A1A6792-8407-45CA-BDE0-35876493CCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A1A6792-8407-45CA-BDE0-35876493CCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A1A6792-8407-45CA-BDE0-35876493CCDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF69C78C-D58F-4984-B5D7-AB29E8646DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF69C78C-D58F-4984-B5D7-AB29E8646DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF69C78C-D58F-4984-B5D7-AB29E8646DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF69C78C-D58F-4984-B5D7-AB29E8646DFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +172,7 @@ Global
 		{B573292A-50A7-4F94-AFD2-03A522A7F05A} = {ACCA28C7-5D4D-4D64-B372-E308F2FB5E01}
 		{62E3BF52-6621-4496-BFCC-001F77D35818} = {A1AEC664-8F1C-4DB4-8383-CC5B323D155F}
 		{9A1A6792-8407-45CA-BDE0-35876493CCDE} = {A1AEC664-8F1C-4DB4-8383-CC5B323D155F}
+		{BF69C78C-D58F-4984-B5D7-AB29E8646DFA} = {CFA6A6FC-A43C-462C-9359-1BF1E3D55F5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22949918-CDF8-4BA0-AAFC-73D1B28AF754}
